@@ -31,11 +31,7 @@ Examples:
 If you do not supply any input, a full list will be shown.
 Oh, and finally, note that all searches are cASe INSenSitiVe.
 "
-
-
 }
-
-
 
 INPUT="$@"
 
@@ -60,14 +56,19 @@ IFS=$'\n' INFO=($(echo "
 if [ "$#" = "0" ]
 then
 	echo "$INFO"
+
+	THIS_MAC=$(sw_vers -productVersion)
+
 	echo "	(Try “$NAME --help” for tips/hints.)"
+	echo "	(This Mac is running: $THIS_MAC)"
+
 else
 	case "$INPUT:l" in
 		-h|--help|help)
 			show_usage
 		;;
 
-		all)
+		all|--all)
 			echo "$INFO"
 		;;
 
