@@ -36,6 +36,7 @@ Oh, and finally, note that all searches are cASe INSenSitiVe.
 INPUT="$@"
 
 IFS=$'\n' INFO=($(echo "
+ 10.15	macOS Catalina
  10.14	macOS Mojave
  10.13	macOS High Sierra
  10.12	macOS Sierra
