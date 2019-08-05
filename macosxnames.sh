@@ -1,4 +1,4 @@
-#!/bin/zsh -f
+#!/usr/bin/env zsh -f
 # Purpose: Show the names and version numbers of all the versions of Mac OS X or MacOS in the “X” era
 #
 # From:	Timothy J. Luoma
